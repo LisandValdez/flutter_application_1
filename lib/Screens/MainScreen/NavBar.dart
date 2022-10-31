@@ -5,7 +5,7 @@ AppBar bar(BuildContext context) {
     centerTitle: true,
     automaticallyImplyLeading: true,
     elevation: 30,
-    backgroundColor: Colors.lightBlue.shade400,
+    backgroundColor: Colors.white10,
     title: const Text(
       'Emociones',
       style: TextStyle(color: Colors.black, fontSize: 20),
