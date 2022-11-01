@@ -11,147 +11,164 @@ class Prueba extends StatelessWidget {
     return ListView(
       children: [
         Container(
-          height: 330,
+          height: 420,
           color: Colors.red.shade300,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  Center(
+                    child: Text(
+                      'IRA',
+                      style: TextStyle(fontSize: 30),
+                    ),
+                  )
+                ],
+              ),
+              Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
                 Center(
                     child: Buttons(
                         textColor: Colors.black,
                         backgroundColor: Colors.red.shade400,
-                        text: "Ira",
+                        text: "Decaido",
                         onPressed: () {})),
                 Buttons(
                     textColor: Colors.black,
                     backgroundColor: Colors.red.shade400,
-                    text: "Ira",
+                    text: "Humillado",
                     onPressed: () {}),
                 Buttons(
                     textColor: Colors.black,
                     backgroundColor: Colors.red.shade400,
-                    text: "Ira",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.red.shade400,
-                    text: "Ira",
+                    text: "Amargo",
                     onPressed: () {}),
               ]),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+              Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
                 Center(
                     child: Buttons(
                         textColor: Colors.black,
                         backgroundColor: Colors.red.shade400,
-                        text: "Ira",
+                        text: "Agresivo",
                         onPressed: () {})),
                 Buttons(
                     textColor: Colors.black,
                     backgroundColor: Colors.red.shade400,
-                    text: "Ira",
+                    text: "Enojado",
                     onPressed: () {}),
                 Buttons(
                     textColor: Colors.black,
                     backgroundColor: Colors.red.shade400,
-                    text: "Ira",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.red.shade400,
-                    text: "Ira",
+                    text: "Frustrado",
                     onPressed: () {}),
               ]),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+              Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
                 Center(
                     child: Buttons(
                         textColor: Colors.black,
                         backgroundColor: Colors.red.shade400,
-                        text: "Ira",
+                        text: "Distante",
                         onPressed: () {})),
                 Buttons(
                     textColor: Colors.black,
                     backgroundColor: Colors.red.shade400,
-                    text: "Ira",
+                    text: "Critico",
                     onPressed: () {}),
                 Buttons(
                     textColor: Colors.black,
                     backgroundColor: Colors.red.shade400,
-                    text: "Ira",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.red.shade400,
-                    text: "Ira",
+                    text: "Traicionado",
                     onPressed: () {}),
               ]),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+              Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
                 Center(
                     child: Buttons(
                         textColor: Colors.black,
                         backgroundColor: Colors.red.shade400,
-                        text: "Ira",
+                        text: "Resentido",
                         onPressed: () {})),
                 Buttons(
                     textColor: Colors.black,
                     backgroundColor: Colors.red.shade400,
-                    text: "Ira",
+                    text: "Irrespetuoso",
                     onPressed: () {}),
                 Buttons(
                     textColor: Colors.black,
                     backgroundColor: Colors.red.shade400,
-                    text: "Ira",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.red.shade400,
-                    text: "Ira",
+                    text: "Ridiculizado",
                     onPressed: () {}),
               ]),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+              Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
                 Center(
                     child: Buttons(
                         textColor: Colors.black,
                         backgroundColor: Colors.red.shade400,
-                        text: "Ira",
+                        text: "Indignado",
                         onPressed: () {})),
                 Buttons(
                     textColor: Colors.black,
                     backgroundColor: Colors.red.shade400,
-                    text: "Ira",
+                    text: "Violado",
                     onPressed: () {}),
                 Buttons(
                     textColor: Colors.black,
                     backgroundColor: Colors.red.shade400,
-                    text: "Ira",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.red.shade400,
-                    text: "Ira",
+                    text: "Furioso",
                     onPressed: () {}),
               ]),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+              Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
                 Center(
                     child: Buttons(
                         textColor: Colors.black,
                         backgroundColor: Colors.red.shade400,
-                        text: "Ira",
+                        text: "Celoso",
                         onPressed: () {})),
                 Buttons(
                     textColor: Colors.black,
                     backgroundColor: Colors.red.shade400,
-                    text: "Ira",
+                    text: "Provocado",
                     onPressed: () {}),
                 Buttons(
                     textColor: Colors.black,
                     backgroundColor: Colors.red.shade400,
-                    text: "Ira",
+                    text: "Hostil",
+                    onPressed: () {}),
+              ]),
+              Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
+                Center(
+                    child: Buttons(
+                        textColor: Colors.black,
+                        backgroundColor: Colors.red.shade400,
+                        text: "Enfurecido",
+                        onPressed: () {})),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.red.shade400,
+                    text: "Molesto",
                     onPressed: () {}),
                 Buttons(
                     textColor: Colors.black,
                     backgroundColor: Colors.red.shade400,
-                    text: "Ira",
+                    text: "Retirado",
+                    onPressed: () {}),
+              ]),
+              Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
+                Center(
+                    child: Buttons(
+                        textColor: Colors.black,
+                        backgroundColor: Colors.red.shade400,
+                        text: "Entumecido",
+                        onPressed: () {})),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.red.shade400,
+                    text: "Esceptico",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.red.shade400,
+                    text: "Desdeñoso",
                     onPressed: () {}),
               ])
             ],

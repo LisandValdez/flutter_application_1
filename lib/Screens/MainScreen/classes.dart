@@ -27,7 +27,7 @@ class _ButtonsState extends State<Buttons> {
         textColor: widget.textColor,
         child: Text(
           widget.text,
-          style: const TextStyle(fontSize: 20),
+          style: const TextStyle(fontSize: 15),
         ),
       ),
     );
