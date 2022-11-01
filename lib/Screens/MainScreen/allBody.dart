@@ -342,6 +342,318 @@ class AllBody extends StatelessWidget {
               ]),
             ],
           ),
+        ),
+        Container(
+          height: 200,
+          color: Colors.amber.shade300,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+                Center(
+                    child: Buttons(
+                        textColor: Colors.black,
+                        backgroundColor: Colors.amber.shade400,
+                        text: "Triste",
+                        onPressed: () {})),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.amber.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.amber.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.amber.shade400,
+                    text: "Triste",
+                    onPressed: () {})
+              ]),
+              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+                Center(
+                    child: Buttons(
+                        textColor: Colors.black,
+                        backgroundColor: Colors.amber.shade400,
+                        text: "Triste",
+                        onPressed: () {})),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.amber.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.amber.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.amber.shade400,
+                    text: "Triste",
+                    onPressed: () {})
+              ]),
+              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+                Center(
+                    child: Buttons(
+                        textColor: Colors.black,
+                        backgroundColor: Colors.amber.shade400,
+                        text: "Triste",
+                        onPressed: () {})),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.amber.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.amber.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.amber.shade400,
+                    text: "Triste",
+                    onPressed: () {})
+              ]),
+            ],
+          ),
+        ),
+        Container(
+          height: 200,
+          color: Colors.grey.shade300,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+                Center(
+                    child: Buttons(
+                        textColor: Colors.black,
+                        backgroundColor: Colors.grey.shade400,
+                        text: "Triste",
+                        onPressed: () {})),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.grey.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.grey.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.grey.shade400,
+                    text: "Triste",
+                    onPressed: () {})
+              ]),
+              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+                Center(
+                    child: Buttons(
+                        textColor: Colors.black,
+                        backgroundColor: Colors.grey.shade400,
+                        text: "Triste",
+                        onPressed: () {})),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.grey.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.grey.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.grey.shade400,
+                    text: "Triste",
+                    onPressed: () {})
+              ]),
+              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+                Center(
+                    child: Buttons(
+                        textColor: Colors.black,
+                        backgroundColor: Colors.grey.shade400,
+                        text: "Triste",
+                        onPressed: () {})),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.grey.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.grey.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.grey.shade400,
+                    text: "Triste",
+                    onPressed: () {})
+              ]),
+            ],
+          ),
+        ),
+        Container(
+          height: 200,
+          color: Colors.purple.shade300,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+                Center(
+                    child: Buttons(
+                        textColor: Colors.black,
+                        backgroundColor: Colors.purple.shade400,
+                        text: "Triste",
+                        onPressed: () {})),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.purple.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.purple.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.purple.shade400,
+                    text: "Triste",
+                    onPressed: () {})
+              ]),
+              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+                Center(
+                    child: Buttons(
+                        textColor: Colors.black,
+                        backgroundColor: Colors.purple.shade400,
+                        text: "Triste",
+                        onPressed: () {})),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.purple.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.purple.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.purple.shade400,
+                    text: "Triste",
+                    onPressed: () {})
+              ]),
+              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+                Center(
+                    child: Buttons(
+                        textColor: Colors.black,
+                        backgroundColor: Colors.purple.shade400,
+                        text: "Triste",
+                        onPressed: () {})),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.purple.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.purple.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.purple.shade400,
+                    text: "Triste",
+                    onPressed: () {})
+              ]),
+            ],
+          ),
+        ),
+        Container(
+          height: 200,
+          color: Colors.deepOrange.shade300,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+                Center(
+                    child: Buttons(
+                        textColor: Colors.black,
+                        backgroundColor: Colors.deepOrange.shade400,
+                        text: "Triste",
+                        onPressed: () {})),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.deepOrange.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.deepOrange.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.deepOrange.shade400,
+                    text: "Triste",
+                    onPressed: () {})
+              ]),
+              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+                Center(
+                    child: Buttons(
+                        textColor: Colors.black,
+                        backgroundColor: Colors.deepOrange.shade400,
+                        text: "Triste",
+                        onPressed: () {})),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.deepOrange.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.deepOrange.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.deepOrange.shade400,
+                    text: "Triste",
+                    onPressed: () {})
+              ]),
+              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+                Center(
+                    child: Buttons(
+                        textColor: Colors.black,
+                        backgroundColor: Colors.deepOrange.shade400,
+                        text: "Triste",
+                        onPressed: () {})),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.deepOrange.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.deepOrange.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.deepOrange.shade400,
+                    text: "Triste",
+                    onPressed: () {})
+              ]),
+            ],
+          ),
         )
       ],
     );
