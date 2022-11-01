@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Screens/MainScreen/classes.dart';
 
 void main() => runApp(const Prueba());
 
@@ -7,89 +8,151 @@ class Prueba extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.start,
+    return ListView(
       children: [
         Container(
-          height: 200,
+          height: 330,
           color: Colors.red.shade300,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
                 Center(
-                  child: ElevatedButton(
-                    child: const Text(
-                      "Ira",
-                      style: TextStyle(color: Colors.black, fontSize: 20),
-                    ),
-                    onPressed: () {},
-                  ),
-                ),
-                ElevatedButton(
-                  child: const Text(
-                    "Alegria",
-                    style: TextStyle(color: Colors.black, fontSize: 20),
-                  ),
-                  onPressed: () {},
-                ),
-                ElevatedButton(
-                  child: const Text(
-                    "Tristeza",
-                    style: TextStyle(color: Colors.black, fontSize: 20),
-                  ),
-                  onPressed: () {},
-                ),
+                    child: Buttons(
+                        textColor: Colors.black,
+                        backgroundColor: Colors.red.shade400,
+                        text: "Ira",
+                        onPressed: () {})),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.red.shade400,
+                    text: "Ira",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.red.shade400,
+                    text: "Ira",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.red.shade400,
+                    text: "Ira",
+                    onPressed: () {}),
               ]),
               Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
                 Center(
-                  child: ElevatedButton(
-                    child: const Text(
-                      "Ira",
-                      style: TextStyle(color: Colors.black, fontSize: 20),
-                    ),
-                    onPressed: () {},
-                  ),
-                ),
-                ElevatedButton(
-                  child: const Text(
-                    "Alegria",
-                    style: TextStyle(color: Colors.black, fontSize: 20),
-                  ),
-                  onPressed: () {},
-                ),
-                ElevatedButton(
-                  child: const Text(
-                    "Tristeza",
-                    style: TextStyle(color: Colors.black, fontSize: 20),
-                  ),
-                  onPressed: () {},
-                ),
+                    child: Buttons(
+                        textColor: Colors.black,
+                        backgroundColor: Colors.red.shade400,
+                        text: "Ira",
+                        onPressed: () {})),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.red.shade400,
+                    text: "Ira",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.red.shade400,
+                    text: "Ira",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.red.shade400,
+                    text: "Ira",
+                    onPressed: () {}),
               ]),
               Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
                 Center(
-                  child: ElevatedButton(
-                    child: const Text(
-                      "Ira",
-                      style: TextStyle(color: Colors.black, fontSize: 20),
-                    ),
-                    onPressed: () {},
-                  ),
-                ),
-                ElevatedButton(
-                  child: const Text(
-                    "Alegria",
-                    style: TextStyle(color: Colors.black, fontSize: 20),
-                  ),
-                  onPressed: () {},
-                ),
-                ElevatedButton(
-                  child: const Text(
-                    "Tristeza",
-                    style: TextStyle(color: Colors.black, fontSize: 20),
-                  ),
-                  onPressed: () {},
-                ),
+                    child: Buttons(
+                        textColor: Colors.black,
+                        backgroundColor: Colors.red.shade400,
+                        text: "Ira",
+                        onPressed: () {})),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.red.shade400,
+                    text: "Ira",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.red.shade400,
+                    text: "Ira",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.red.shade400,
+                    text: "Ira",
+                    onPressed: () {}),
+              ]),
+              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+                Center(
+                    child: Buttons(
+                        textColor: Colors.black,
+                        backgroundColor: Colors.red.shade400,
+                        text: "Ira",
+                        onPressed: () {})),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.red.shade400,
+                    text: "Ira",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.red.shade400,
+                    text: "Ira",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.red.shade400,
+                    text: "Ira",
+                    onPressed: () {}),
+              ]),
+              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+                Center(
+                    child: Buttons(
+                        textColor: Colors.black,
+                        backgroundColor: Colors.red.shade400,
+                        text: "Ira",
+                        onPressed: () {})),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.red.shade400,
+                    text: "Ira",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.red.shade400,
+                    text: "Ira",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.red.shade400,
+                    text: "Ira",
+                    onPressed: () {}),
+              ]),
+              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+                Center(
+                    child: Buttons(
+                        textColor: Colors.black,
+                        backgroundColor: Colors.red.shade400,
+                        text: "Ira",
+                        onPressed: () {})),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.red.shade400,
+                    text: "Ira",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.red.shade400,
+                    text: "Ira",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.red.shade400,
+                    text: "Ira",
+                    onPressed: () {}),
               ])
             ],
           ),
@@ -102,80 +165,73 @@ class Prueba extends StatelessWidget {
             children: [
               Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
                 Center(
-                  child: ElevatedButton(
-                    child: const Text(
-                      "Ira",
-                      style: TextStyle(color: Colors.black, fontSize: 20),
-                    ),
-                    onPressed: () {},
-                  ),
-                ),
-                ElevatedButton(
-                  child: const Text(
-                    "Alegria",
-                    style: TextStyle(color: Colors.black, fontSize: 20),
-                  ),
-                  onPressed: () {},
-                ),
-                ElevatedButton(
-                  child: const Text(
-                    "Tristeza",
-                    style: TextStyle(color: Colors.black, fontSize: 20),
-                  ),
-                  onPressed: () {},
-                ),
+                    child: Buttons(
+                        textColor: Colors.black,
+                        backgroundColor: Colors.green.shade400,
+                        text: "Mal",
+                        onPressed: () {})),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.green.shade400,
+                    text: "Mal",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.green.shade400,
+                    text: "Mal",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.green.shade400,
+                    text: "Mal",
+                    onPressed: () {})
               ]),
               Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
                 Center(
-                  child: ElevatedButton(
-                    child: const Text(
-                      "Ira",
-                      style: TextStyle(color: Colors.black, fontSize: 20),
-                    ),
-                    onPressed: () {},
-                  ),
-                ),
-                ElevatedButton(
-                  child: const Text(
-                    "Alegria",
-                    style: TextStyle(color: Colors.black, fontSize: 20),
-                  ),
-                  onPressed: () {},
-                ),
-                ElevatedButton(
-                  child: const Text(
-                    "Tristeza",
-                    style: TextStyle(color: Colors.black, fontSize: 20),
-                  ),
-                  onPressed: () {},
-                ),
+                    child: Buttons(
+                        textColor: Colors.black,
+                        backgroundColor: Colors.green.shade400,
+                        text: "Mal",
+                        onPressed: () {})),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.green.shade400,
+                    text: "Mal",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.green.shade400,
+                    text: "Mal",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.green.shade400,
+                    text: "Mal",
+                    onPressed: () {}),
               ]),
               Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
                 Center(
-                  child: ElevatedButton(
-                    child: const Text(
-                      "Ira",
-                      style: TextStyle(color: Colors.black, fontSize: 20),
-                    ),
-                    onPressed: () {},
-                  ),
-                ),
-                ElevatedButton(
-                  child: const Text(
-                    "Alegria",
-                    style: TextStyle(color: Colors.black, fontSize: 20),
-                  ),
-                  onPressed: () {},
-                ),
-                MaterialButton(
-                  color: Colors.green.shade400,
-                  child: const Text(
-                    "Tristeza",
-                    style: TextStyle(color: Colors.black, fontSize: 20),
-                  ),
-                  onPressed: () {},
-                ),
-              ])
+                    child: Buttons(
+                        textColor: Colors.black,
+                        backgroundColor: Colors.green.shade400,
+                        text: "Mal",
+                        onPressed: () {})),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.green.shade400,
+                    text: "Mal",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.green.shade400,
+                    text: "Mal",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.green.shade400,
+                    text: "Mal",
+                    onPressed: () {}),
+              ]),
             ],
           ),
         ),
@@ -187,79 +243,86 @@ class Prueba extends StatelessWidget {
             children: [
               Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
                 Center(
-                  child: ElevatedButton(
-                    child: const Text(
-                      "Ira",
-                      style: TextStyle(color: Colors.black, fontSize: 20),
-                    ),
-                    onPressed: () {},
-                  ),
-                ),
-                ElevatedButton(
-                  child: const Text(
-                    "Alegria",
-                    style: TextStyle(color: Colors.black, fontSize: 20),
-                  ),
-                  onPressed: () {},
-                ),
-                ElevatedButton(
-                  child: const Text(
-                    "Tristeza",
-                    style: TextStyle(color: Colors.black, fontSize: 20),
-                  ),
-                  onPressed: () {},
-                ),
+                    child: Buttons(
+                        textColor: Colors.black,
+                        backgroundColor: Colors.blue.shade400,
+                        text: "Triste",
+                        onPressed: () {})),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.blue.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.blue.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.blue.shade400,
+                    text: "Triste",
+                    onPressed: () {})
               ]),
               Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
                 Center(
-                  child: ElevatedButton(
-                    child: const Text(
-                      "Ira",
-                      style: TextStyle(color: Colors.black, fontSize: 20),
-                    ),
-                    onPressed: () {},
-                  ),
-                ),
-                ElevatedButton(
-                  child: const Text(
-                    "Alegria",
-                    style: TextStyle(color: Colors.black, fontSize: 20),
-                  ),
-                  onPressed: () {},
-                ),
-                ElevatedButton(
-                  child: const Text(
-                    "Tristeza",
-                    style: TextStyle(color: Colors.black, fontSize: 20),
-                  ),
-                  onPressed: () {},
-                ),
+                    child: Buttons(
+                        textColor: Colors.black,
+                        backgroundColor: Colors.blue.shade400,
+                        text: "Triste",
+                        onPressed: () {})),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.blue.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.blue.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.blue.shade400,
+                    text: "Triste",
+                    onPressed: () {})
               ]),
               Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
                 Center(
-                  child: ElevatedButton(
-                    child: const Text(
-                      "Ira",
-                      style: TextStyle(color: Colors.black, fontSize: 20),
-                    ),
-                    onPressed: () {},
-                  ),
-                ),
-                ElevatedButton(
-                  child: const Text(
-                    "Alegria",
-                    style: TextStyle(color: Colors.black, fontSize: 20),
-                  ),
-                  onPressed: () {},
-                ),
-                ElevatedButton(
-                  child: const Text(
-                    "Tristeza",
-                    style: TextStyle(color: Colors.black, fontSize: 20),
-                  ),
-                  onPressed: () {},
-                ),
-              ])
+                    child: Buttons(
+                        textColor: Colors.black,
+                        backgroundColor: Colors.blue.shade400,
+                        text: "Triste",
+                        onPressed: () {})),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.blue.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.blue.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.blue.shade400,
+                    text: "Triste",
+                    onPressed: () {})
+              ]),
+              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+                Center(
+                    child: Buttons(
+                        textColor: Colors.black,
+                        backgroundColor: Colors.blue.shade400,
+                        text: "Triste",
+                        onPressed: () {})),
+                Buttons(
+                    textColor: Colors.black,
+                    backgroundColor: Colors.blue.shade400,
+                    text: "Triste",
+                    onPressed: () {}),
+              ]),
             ],
           ),
         )
