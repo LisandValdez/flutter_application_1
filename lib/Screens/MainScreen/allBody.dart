@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Screens/MainScreen/classes.dart';
+import 'package:flutter_application_1/Backk/Listas.dart';
 
-void main() => runApp(const AllBody());
+void main() => runApp(AllBody());
 
 class AllBody extends StatelessWidget {
-  const AllBody({super.key});
+  AllBody({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return ListView(
       children: [
         Container(
-          height: 420,
+          height: 430,
           color: Colors.red.shade300,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -19,643 +19,202 @@ class AllBody extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
-                  Center(
-                    child: Text(
-                      'IRA',
-                      style: TextStyle(fontSize: 30),
-                    ),
+                  Text(
+                    'IRA',
+                    style: TextStyle(fontSize: 30),
                   )
                 ],
               ),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
-                Center(
-                    child: Buttons(
-                        textColor: Colors.black,
-                        backgroundColor: Colors.red.shade400,
-                        text: "Decaido",
-                        onPressed: () {})),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.red.shade400,
-                    text: "Humillado",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.red.shade400,
-                    text: "Amargo",
-                    onPressed: () {}),
-              ]),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
-                Center(
-                    child: Buttons(
-                        textColor: Colors.black,
-                        backgroundColor: Colors.red.shade400,
-                        text: "Agresivo",
-                        onPressed: () {})),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.red.shade400,
-                    text: "Enojado",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.red.shade400,
-                    text: "Frustrado",
-                    onPressed: () {}),
-              ]),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
-                Center(
-                    child: Buttons(
-                        textColor: Colors.black,
-                        backgroundColor: Colors.red.shade400,
-                        text: "Distante",
-                        onPressed: () {})),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.red.shade400,
-                    text: "Critico",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.red.shade400,
-                    text: "Traicionado",
-                    onPressed: () {}),
-              ]),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
-                Center(
-                    child: Buttons(
-                        textColor: Colors.black,
-                        backgroundColor: Colors.red.shade400,
-                        text: "Resentido",
-                        onPressed: () {})),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.red.shade400,
-                    text: "Irrespetuoso",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.red.shade400,
-                    text: "Ridiculizado",
-                    onPressed: () {}),
-              ]),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
-                Center(
-                    child: Buttons(
-                        textColor: Colors.black,
-                        backgroundColor: Colors.red.shade400,
-                        text: "Indignado",
-                        onPressed: () {})),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.red.shade400,
-                    text: "Violado",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.red.shade400,
-                    text: "Furioso",
-                    onPressed: () {}),
-              ]),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
-                Center(
-                    child: Buttons(
-                        textColor: Colors.black,
-                        backgroundColor: Colors.red.shade400,
-                        text: "Celoso",
-                        onPressed: () {})),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.red.shade400,
-                    text: "Provocado",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.red.shade400,
-                    text: "Hostil",
-                    onPressed: () {}),
-              ]),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
-                Center(
-                    child: Buttons(
-                        textColor: Colors.black,
-                        backgroundColor: Colors.red.shade400,
-                        text: "Enfurecido",
-                        onPressed: () {})),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.red.shade400,
-                    text: "Molesto",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.red.shade400,
-                    text: "Retirado",
-                    onPressed: () {}),
-              ]),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
-                Center(
-                    child: Buttons(
-                        textColor: Colors.black,
-                        backgroundColor: Colors.red.shade400,
-                        text: "Entumecido",
-                        onPressed: () {})),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.red.shade400,
-                    text: "Esceptico",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.red.shade400,
-                    text: "Desdeñoso",
-                    onPressed: () {}),
-              ])
+              for (List<String> row in Ira)
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    for (String feeling in row)
+                      MyButton(
+                        text: feeling,
+                        backgroundColor: Colors.red.shade100,
+                      ),
+                  ],
+                ),
             ],
           ),
         ),
         Container(
-          height: 200,
+          height: 430,
+          color: Colors.yellow.shade400,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  Text(
+                    'Felicidad',
+                    style: TextStyle(fontSize: 30),
+                  )
+                ],
+              ),
+              for (List<String> row in Felicidad)
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    for (String feeling in row)
+                      MyButton(
+                        text: feeling,
+                        backgroundColor: Colors.yellow.shade100,
+                      ),
+                  ],
+                ),
+            ],
+          ),
+        ),
+        Container(
+          height: 430,
           color: Colors.green.shade300,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                Center(
-                    child: Buttons(
-                        textColor: Colors.black,
-                        backgroundColor: Colors.green.shade400,
-                        text: "Mal",
-                        onPressed: () {})),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.green.shade400,
-                    text: "Mal",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.green.shade400,
-                    text: "Mal",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.green.shade400,
-                    text: "Mal",
-                    onPressed: () {})
-              ]),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                Center(
-                    child: Buttons(
-                        textColor: Colors.black,
-                        backgroundColor: Colors.green.shade400,
-                        text: "Mal",
-                        onPressed: () {})),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.green.shade400,
-                    text: "Mal",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.green.shade400,
-                    text: "Mal",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.green.shade400,
-                    text: "Mal",
-                    onPressed: () {}),
-              ]),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                Center(
-                    child: Buttons(
-                        textColor: Colors.black,
-                        backgroundColor: Colors.green.shade400,
-                        text: "Mal",
-                        onPressed: () {})),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.green.shade400,
-                    text: "Mal",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.green.shade400,
-                    text: "Mal",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.green.shade400,
-                    text: "Mal",
-                    onPressed: () {}),
-              ]),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  Text(
+                    'Triteza',
+                    style: TextStyle(fontSize: 30),
+                  )
+                ],
+              ),
+              for (List<String> row in Tristeza)
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    for (String feeling in row)
+                      MyButton(
+                        text: feeling,
+                        backgroundColor: Colors.green.shade100,
+                      ),
+                  ],
+                ),
             ],
           ),
         ),
         Container(
-          height: 200,
+          height: 430,
           color: Colors.blue.shade300,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                Center(
-                    child: Buttons(
-                        textColor: Colors.black,
-                        backgroundColor: Colors.blue.shade400,
-                        text: "Triste",
-                        onPressed: () {})),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.blue.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.blue.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.blue.shade400,
-                    text: "Triste",
-                    onPressed: () {})
-              ]),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                Center(
-                    child: Buttons(
-                        textColor: Colors.black,
-                        backgroundColor: Colors.blue.shade400,
-                        text: "Triste",
-                        onPressed: () {})),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.blue.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.blue.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.blue.shade400,
-                    text: "Triste",
-                    onPressed: () {})
-              ]),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                Center(
-                    child: Buttons(
-                        textColor: Colors.black,
-                        backgroundColor: Colors.blue.shade400,
-                        text: "Triste",
-                        onPressed: () {})),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.blue.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.blue.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.blue.shade400,
-                    text: "Triste",
-                    onPressed: () {})
-              ]),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                Center(
-                    child: Buttons(
-                        textColor: Colors.black,
-                        backgroundColor: Colors.blue.shade400,
-                        text: "Triste",
-                        onPressed: () {})),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.blue.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-              ]),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  Text(
+                    'Sorpresa',
+                    style: TextStyle(fontSize: 30),
+                  )
+                ],
+              ),
+              for (List<String> row in Sorpresa)
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    for (String feeling in row)
+                      MyButton(
+                        text: feeling,
+                        backgroundColor: Colors.blue.shade100,
+                      ),
+                  ],
+                ),
             ],
           ),
         ),
         Container(
-          height: 200,
-          color: Colors.amber.shade300,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                Center(
-                    child: Buttons(
-                        textColor: Colors.black,
-                        backgroundColor: Colors.amber.shade400,
-                        text: "Triste",
-                        onPressed: () {})),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.amber.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.amber.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.amber.shade400,
-                    text: "Triste",
-                    onPressed: () {})
-              ]),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                Center(
-                    child: Buttons(
-                        textColor: Colors.black,
-                        backgroundColor: Colors.amber.shade400,
-                        text: "Triste",
-                        onPressed: () {})),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.amber.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.amber.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.amber.shade400,
-                    text: "Triste",
-                    onPressed: () {})
-              ]),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                Center(
-                    child: Buttons(
-                        textColor: Colors.black,
-                        backgroundColor: Colors.amber.shade400,
-                        text: "Triste",
-                        onPressed: () {})),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.amber.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.amber.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.amber.shade400,
-                    text: "Triste",
-                    onPressed: () {})
-              ]),
-            ],
-          ),
-        ),
-        Container(
-          height: 200,
-          color: Colors.grey.shade300,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                Center(
-                    child: Buttons(
-                        textColor: Colors.black,
-                        backgroundColor: Colors.grey.shade400,
-                        text: "Triste",
-                        onPressed: () {})),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.grey.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.grey.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.grey.shade400,
-                    text: "Triste",
-                    onPressed: () {})
-              ]),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                Center(
-                    child: Buttons(
-                        textColor: Colors.black,
-                        backgroundColor: Colors.grey.shade400,
-                        text: "Triste",
-                        onPressed: () {})),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.grey.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.grey.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.grey.shade400,
-                    text: "Triste",
-                    onPressed: () {})
-              ]),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                Center(
-                    child: Buttons(
-                        textColor: Colors.black,
-                        backgroundColor: Colors.grey.shade400,
-                        text: "Triste",
-                        onPressed: () {})),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.grey.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.grey.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.grey.shade400,
-                    text: "Triste",
-                    onPressed: () {})
-              ]),
-            ],
-          ),
-        ),
-        Container(
-          height: 200,
+          height: 430,
           color: Colors.purple.shade300,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                Center(
-                    child: Buttons(
-                        textColor: Colors.black,
-                        backgroundColor: Colors.purple.shade400,
-                        text: "Triste",
-                        onPressed: () {})),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.purple.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.purple.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.purple.shade400,
-                    text: "Triste",
-                    onPressed: () {})
-              ]),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                Center(
-                    child: Buttons(
-                        textColor: Colors.black,
-                        backgroundColor: Colors.purple.shade400,
-                        text: "Triste",
-                        onPressed: () {})),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.purple.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.purple.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.purple.shade400,
-                    text: "Triste",
-                    onPressed: () {})
-              ]),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                Center(
-                    child: Buttons(
-                        textColor: Colors.black,
-                        backgroundColor: Colors.purple.shade400,
-                        text: "Triste",
-                        onPressed: () {})),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.purple.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.purple.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.purple.shade400,
-                    text: "Triste",
-                    onPressed: () {})
-              ]),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  Text(
+                    'Miedo',
+                    style: TextStyle(fontSize: 30),
+                  )
+                ],
+              ),
+              for (List<String> row in Miedo)
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    for (String feeling in row)
+                      MyButton(
+                        text: feeling,
+                        backgroundColor: Colors.purple.shade100,
+                      ),
+                  ],
+                ),
             ],
           ),
         ),
         Container(
-          height: 200,
-          color: Colors.deepOrange.shade300,
+          height: 430,
+          color: Colors.orange.shade300,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                Center(
-                    child: Buttons(
-                        textColor: Colors.black,
-                        backgroundColor: Colors.deepOrange.shade400,
-                        text: "Triste",
-                        onPressed: () {})),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.deepOrange.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.deepOrange.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.deepOrange.shade400,
-                    text: "Triste",
-                    onPressed: () {})
-              ]),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                Center(
-                    child: Buttons(
-                        textColor: Colors.black,
-                        backgroundColor: Colors.deepOrange.shade400,
-                        text: "Triste",
-                        onPressed: () {})),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.deepOrange.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.deepOrange.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.deepOrange.shade400,
-                    text: "Triste",
-                    onPressed: () {})
-              ]),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                Center(
-                    child: Buttons(
-                        textColor: Colors.black,
-                        backgroundColor: Colors.deepOrange.shade400,
-                        text: "Triste",
-                        onPressed: () {})),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.deepOrange.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.deepOrange.shade400,
-                    text: "Triste",
-                    onPressed: () {}),
-                Buttons(
-                    textColor: Colors.black,
-                    backgroundColor: Colors.deepOrange.shade400,
-                    text: "Triste",
-                    onPressed: () {})
-              ]),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  Text(
+                    'Disgusto',
+                    style: TextStyle(fontSize: 30),
+                  )
+                ],
+              ),
+              for (List<String> row in Disgusto)
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    for (String feeling in row)
+                      MyButton(
+                        text: feeling,
+                        backgroundColor: Colors.orange.shade100,
+                      ),
+                  ],
+                ),
             ],
           ),
-        )
+        ),
+        // Otros contenedores y filas de botones ...
       ],
+    );
+  }
+}
+
+class MyButton extends StatelessWidget {
+  final String text;
+  final Color backgroundColor;
+
+  const MyButton({Key? key, required this.text, required this.backgroundColor})
+      : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: ElevatedButton(
+          onPressed: () {},
+          style: ElevatedButton.styleFrom(
+            foregroundColor: Colors.black,
+            backgroundColor: backgroundColor,
+            minimumSize: Size(double.infinity, 50),
+          ),
+          child: Text(
+            text,
+            style: TextStyle(fontSize: 20), // Ajusta el tamaño de la fuente
+          ),
+        ),
+      ),
     );
   }
 }

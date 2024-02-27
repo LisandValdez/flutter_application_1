@@ -12,7 +12,7 @@ class MainScreen extends StatelessWidget {
       backgroundColor: Colors.white70,
       appBar: bar(context),
       drawer: const Drawers(),
-      body: const AllBody(),
+      body: AllBody(),
     );
   }
 }
