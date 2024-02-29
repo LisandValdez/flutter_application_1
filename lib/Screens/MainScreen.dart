@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Screens/MainScreen/all_Body.dart';
 import 'MainScreen/NavBar.dart';
 import 'MainScreen/drawer.dart';
-import 'MainScreen/allBody.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -9,10 +9,10 @@ class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white70,
+      backgroundColor: Colors.black12,
       appBar: bar(context),
       drawer: const Drawers(),
-      body: AllBody(),
+      body: const AllBody(),
     );
   }
 }

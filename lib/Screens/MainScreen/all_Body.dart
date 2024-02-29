@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Backk/Listas.dart';
+import 'package:flutter_application_1/Backk/classes.dart';
+import 'package:flutter_application_1/Backk/firebase_services.dart';
 
-void main() => runApp(AllBody());
+//ira : Valor = 1
+//Felicidad: Valor = 2
+//Tristeza: Valor = 3
+//Sorpresa: Valor = 4
+//Miedo: Valor = 5
+//Disgusto: Valor = 6
+void main() => runApp(const AllBody());
 
 class AllBody extends StatelessWidget {
-  AllBody({Key? key}) : super(key: key);
+  const AllBody({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,9 +24,9 @@ class AllBody extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
+                children: [
                   Text(
                     'IRA',
                     style: TextStyle(fontSize: 30),
@@ -33,6 +41,10 @@ class AllBody extends StatelessWidget {
                       MyButton(
                         text: feeling,
                         backgroundColor: Colors.red.shade100,
+                        emocion: feeling,
+                        onPressed: () {
+                          addFeelings(feeling, 1, DateTime.now());
+                        },
                       ),
                   ],
                 ),
@@ -45,9 +57,9 @@ class AllBody extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
+                children: [
                   Text(
                     'Felicidad',
                     style: TextStyle(fontSize: 30),
@@ -62,6 +74,10 @@ class AllBody extends StatelessWidget {
                       MyButton(
                         text: feeling,
                         backgroundColor: Colors.yellow.shade100,
+                        emocion: feeling,
+                        onPressed: () {
+                          addFeelings(feeling, 2, DateTime.now());
+                        },
                       ),
                   ],
                 ),
@@ -74,9 +90,9 @@ class AllBody extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
+                children: [
                   Text(
                     'Triteza',
                     style: TextStyle(fontSize: 30),
@@ -91,6 +107,10 @@ class AllBody extends StatelessWidget {
                       MyButton(
                         text: feeling,
                         backgroundColor: Colors.green.shade100,
+                        emocion: feeling,
+                        onPressed: () {
+                          addFeelings(feeling, 3, DateTime.now());
+                        },
                       ),
                   ],
                 ),
@@ -103,9 +123,9 @@ class AllBody extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
+                children: [
                   Text(
                     'Sorpresa',
                     style: TextStyle(fontSize: 30),
@@ -120,6 +140,10 @@ class AllBody extends StatelessWidget {
                       MyButton(
                         text: feeling,
                         backgroundColor: Colors.blue.shade100,
+                        emocion: feeling,
+                        onPressed: () {
+                          addFeelings(feeling, 4, DateTime.now());
+                        },
                       ),
                   ],
                 ),
@@ -132,9 +156,9 @@ class AllBody extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
+                children: [
                   Text(
                     'Miedo',
                     style: TextStyle(fontSize: 30),
@@ -149,6 +173,10 @@ class AllBody extends StatelessWidget {
                       MyButton(
                         text: feeling,
                         backgroundColor: Colors.purple.shade100,
+                        emocion: feeling,
+                        onPressed: () {
+                          addFeelings(feeling, 5, DateTime.now());
+                        },
                       ),
                   ],
                 ),
@@ -161,9 +189,9 @@ class AllBody extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
+                children: [
                   Text(
                     'Disgusto',
                     style: TextStyle(fontSize: 30),
@@ -178,6 +206,10 @@ class AllBody extends StatelessWidget {
                       MyButton(
                         text: feeling,
                         backgroundColor: Colors.orange.shade100,
+                        emocion: feeling,
+                        onPressed: () {
+                          addFeelings(feeling, 6, DateTime.now());
+                        },
                       ),
                   ],
                 ),
@@ -186,35 +218,6 @@ class AllBody extends StatelessWidget {
         ),
         // Otros contenedores y filas de botones ...
       ],
-    );
-  }
-}
-
-class MyButton extends StatelessWidget {
-  final String text;
-  final Color backgroundColor;
-
-  const MyButton({Key? key, required this.text, required this.backgroundColor})
-      : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Expanded(
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: ElevatedButton(
-          onPressed: () {},
-          style: ElevatedButton.styleFrom(
-            foregroundColor: Colors.black,
-            backgroundColor: backgroundColor,
-            minimumSize: Size(double.infinity, 50),
-          ),
-          child: Text(
-            text,
-            style: TextStyle(fontSize: 20), // Ajusta el tamaño de la fuente
-          ),
-        ),
-      ),
     );
   }
 }
