@@ -53,11 +53,11 @@ class _GraficoBarrasWidgetState extends State<GraficoBarrasWidget> {
     Map<String, int> frecuencias = {};
 
     // Contar la frecuencia de cada emoción
-    querySnapshot.docs.forEach((doc) {
+    for (var doc in querySnapshot.docs) {
       int valor = doc['valor'];
       String emocion = emocionesMap[valor]!;
       frecuencias[emocion] = (frecuencias[emocion] ?? 0) + 1;
-    });
+    }
 
     // Convertir el mapa de frecuencias en una lista de objetos Emocion
     setState(() {
@@ -73,7 +73,8 @@ class _GraficoBarrasWidgetState extends State<GraficoBarrasWidget> {
       charts.Series(
         id: 'Emociones',
         data: emociones,
-        domainFn: (Emocion emocion, _) => emocion.emocion,
+        domainFn: (Emocion emocion, _) =>
+            emocion.emocion.toUpperCase(), // Resaltar y agrandar la emoción
         measureFn: (Emocion emocion, _) => emocion.frecuencia,
         colorFn: (Emocion emocion, _) =>
             coloresMap[emocion.emocion] ??
@@ -82,27 +83,44 @@ class _GraficoBarrasWidgetState extends State<GraficoBarrasWidget> {
       )
     ];
 
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Center(
-        child: emociones.isEmpty
-            ? CircularProgressIndicator()
-            : Container(
-                height: 400,
-                padding: EdgeInsets.all(20),
-                child: charts.BarChart(
-                  series,
-                  animate: true,
-                  vertical: false,
-                  barRendererDecorator: charts.BarLabelDecorator<String>(),
-                  domainAxis: charts.OrdinalAxisSpec(
-                    renderSpec: const charts.SmallTickRendererSpec(
-                      labelAnchor: charts.TickLabelAnchor.centered,
-                      labelRotation: 0,
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        backgroundColor: Colors.lightGreen[200], // Color de fondo del appbar
+        title: const Text(
+          'GRAFICO',
+          style: TextStyle(
+            fontSize: 24.0, // Tamaño de fuente aumentado
+            fontWeight: FontWeight.bold, // Negrita
+          ),
+        ), // Título del appbar
+      ),
+      body: Container(
+        color: Colors.lightGreen[
+            100], // Color de fondo de la pantalla en tonalidad verde claro
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Center(
+            child: emociones.isEmpty
+                ? const CircularProgressIndicator()
+                : Container(
+                    height: 400,
+                    padding: const EdgeInsets.all(20),
+                    child: charts.BarChart(
+                      series,
+                      animate: true,
+                      vertical: false,
+                      barRendererDecorator: charts.BarLabelDecorator<String>(),
+                      domainAxis: const charts.OrdinalAxisSpec(
+                        renderSpec: charts.SmallTickRendererSpec(
+                          labelAnchor: charts.TickLabelAnchor.centered,
+                          labelRotation: 0,
+                        ),
+                      ),
                     ),
                   ),
-                ),
-              ),
+          ),
+        ),
       ),
     );
   }

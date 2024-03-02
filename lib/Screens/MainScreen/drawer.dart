@@ -74,7 +74,7 @@ class Drawers extends StatelessWidget {
     switch (index) {
       case 2:
         Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => const Emocionometro(),
+          builder: (context) => TermometroPage(),
         ));
         break;
     }
