@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter_application_1/Screens/MainScreen/drawer.dart';
 
 class Emocion {
   final String emocion;
@@ -95,6 +96,7 @@ class _GraficoBarrasWidgetState extends State<GraficoBarrasWidget> {
           ),
         ), // Título del appbar
       ),
+      drawer: const Drawers(),
       body: Container(
         color: Colors.lightGreen[
             100], // Color de fondo de la pantalla en tonalidad verde claro

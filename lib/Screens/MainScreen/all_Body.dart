@@ -20,6 +20,7 @@ class AllBody extends StatelessWidget {
       children: [
         Container(
           height: 430,
+          width: double.infinity,
           color: Colors.red.shade300,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -54,6 +55,7 @@ class AllBody extends StatelessWidget {
         Container(
           height: 430,
           color: Colors.yellow.shade400,
+          width: double.infinity,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -87,6 +89,7 @@ class AllBody extends StatelessWidget {
         Container(
           height: 430,
           color: Colors.green.shade300,
+          width: double.infinity,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -120,6 +123,7 @@ class AllBody extends StatelessWidget {
         Container(
           height: 430,
           color: Colors.blue.shade300,
+          width: double.infinity,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -153,6 +157,7 @@ class AllBody extends StatelessWidget {
         Container(
           height: 430,
           color: Colors.purple.shade300,
+          width: double.infinity,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -186,6 +191,7 @@ class AllBody extends StatelessWidget {
         Container(
           height: 430,
           color: Colors.orange.shade300,
+          width: double.infinity,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -216,7 +222,6 @@ class AllBody extends StatelessWidget {
             ],
           ),
         ),
-        // Otros contenedores y filas de botones ...
       ],
     );
   }
